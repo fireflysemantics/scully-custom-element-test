@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
+  template: '<p [innerHTML]=html></p>',
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
@@ -11,10 +11,8 @@ export class HomeComponent implements OnInit {
   <h1> Scully Custom Element Test</h1>
   <fs-image url="https://fireflysemantics.github.io/i/developer/instant-html-vscode.png"></fs-image>
   `
-
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
